@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,16 @@
 		5218F16426ADF30400B36874 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5218F16326ADF30400B36874 /* ContentView.swift */; };
 		5218F16626ADF30500B36874 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5218F16526ADF30500B36874 /* Assets.xcassets */; };
 		5218F16926ADF30500B36874 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5218F16826ADF30500B36874 /* Preview Assets.xcassets */; };
+		52797AA326AF0B0900DFCDE8 /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52797AA226AF0B0900DFCDE8 /* LazyView.swift */; };
+		52797AA726AF0B9300DFCDE8 /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52797AA626AF0B9300DFCDE8 /* PopupView.swift */; };
+		52797AA926AF0BB800DFCDE8 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52797AA826AF0BB800DFCDE8 /* ActivityIndicator.swift */; };
+		52797AAB26AF0BF600DFCDE8 /* FoodScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52797AAA26AF0BF600DFCDE8 /* FoodScreen.swift */; };
+		52797AAD26AF0C1B00DFCDE8 /* TrainingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52797AAC26AF0C1B00DFCDE8 /* TrainingScreen.swift */; };
+		52797AAF26AF0C3B00DFCDE8 /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52797AAE26AF0C3B00DFCDE8 /* ProfileScreen.swift */; };
+		52797AB126AF0C7900DFCDE8 /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52797AB026AF0C7900DFCDE8 /* SettingsScreen.swift */; };
+		52797AB326AF0C8800DFCDE8 /* AboutScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52797AB226AF0C8800DFCDE8 /* AboutScreen.swift */; };
+		52797AB526AF0C9900DFCDE8 /* LicensesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52797AB426AF0C9900DFCDE8 /* LicensesScreen.swift */; };
+		52797AD126AF0E2300DFCDE8 /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = 52797AD026AF0E2300DFCDE8 /* Networking */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +30,16 @@
 		5218F16526ADF30500B36874 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5218F16826ADF30500B36874 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5218F16A26ADF30500B36874 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52797AA226AF0B0900DFCDE8 /* LazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyView.swift; sourceTree = "<group>"; };
+		52797AA626AF0B9300DFCDE8 /* PopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupView.swift; sourceTree = "<group>"; };
+		52797AA826AF0BB800DFCDE8 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		52797AAA26AF0BF600DFCDE8 /* FoodScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodScreen.swift; sourceTree = "<group>"; };
+		52797AAC26AF0C1B00DFCDE8 /* TrainingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingScreen.swift; sourceTree = "<group>"; };
+		52797AAE26AF0C3B00DFCDE8 /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
+		52797AB026AF0C7900DFCDE8 /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
+		52797AB226AF0C8800DFCDE8 /* AboutScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutScreen.swift; sourceTree = "<group>"; };
+		52797AB426AF0C9900DFCDE8 /* LicensesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicensesScreen.swift; sourceTree = "<group>"; };
+		52797AB626AF0D6500DFCDE8 /* Networking */ = {isa = PBXFileReference; lastKnownFileType = text; name = Networking; path = Modules/Networking; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52797AD126AF0E2300DFCDE8 /* Networking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +59,7 @@
 			children = (
 				5218F16026ADF30400B36874 /* DiaryTraining */,
 				5218F15F26ADF30400B36874 /* Products */,
+				52797ACF26AF0E2300DFCDE8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,8 +74,12 @@
 		5218F16026ADF30400B36874 /* DiaryTraining */ = {
 			isa = PBXGroup;
 			children = (
+				52797AB826AF0DC200DFCDE8 /* Modules */,
 				5218F16126ADF30400B36874 /* DiaryTrainingApp.swift */,
+				52797AA126AF0AF100DFCDE8 /* Modifiers */,
 				5218F16326ADF30400B36874 /* ContentView.swift */,
+				52797AA526AF0B6A00DFCDE8 /* Utils */,
+				52797AA426AF0B2100DFCDE8 /* Screens */,
 				5218F16526ADF30500B36874 /* Assets.xcassets */,
 				5218F16A26ADF30500B36874 /* Info.plist */,
 				5218F16726ADF30500B36874 /* Preview Content */,
@@ -67,6 +93,51 @@
 				5218F16826ADF30500B36874 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		52797AA126AF0AF100DFCDE8 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				52797AA226AF0B0900DFCDE8 /* LazyView.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		52797AA426AF0B2100DFCDE8 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				52797AAA26AF0BF600DFCDE8 /* FoodScreen.swift */,
+				52797AAC26AF0C1B00DFCDE8 /* TrainingScreen.swift */,
+				52797AAE26AF0C3B00DFCDE8 /* ProfileScreen.swift */,
+				52797AB026AF0C7900DFCDE8 /* SettingsScreen.swift */,
+				52797AB226AF0C8800DFCDE8 /* AboutScreen.swift */,
+				52797AB426AF0C9900DFCDE8 /* LicensesScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		52797AA526AF0B6A00DFCDE8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				52797AA626AF0B9300DFCDE8 /* PopupView.swift */,
+				52797AA826AF0BB800DFCDE8 /* ActivityIndicator.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		52797AB826AF0DC200DFCDE8 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				52797AB626AF0D6500DFCDE8 /* Networking */,
+			);
+			path = Modules;
+			sourceTree = SOURCE_ROOT;
+		};
+		52797ACF26AF0E2300DFCDE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +156,9 @@
 			dependencies = (
 			);
 			name = DiaryTraining;
+			packageProductDependencies = (
+				52797AD026AF0E2300DFCDE8 /* Networking */,
+			);
 			productName = DiaryTraining;
 			productReference = 5218F15E26ADF30400B36874 /* DiaryTraining.app */;
 			productType = "com.apple.product-type.application";
@@ -138,8 +212,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52797AA326AF0B0900DFCDE8 /* LazyView.swift in Sources */,
+				52797AB126AF0C7900DFCDE8 /* SettingsScreen.swift in Sources */,
+				52797AB526AF0C9900DFCDE8 /* LicensesScreen.swift in Sources */,
+				52797AA926AF0BB800DFCDE8 /* ActivityIndicator.swift in Sources */,
+				52797AB326AF0C8800DFCDE8 /* AboutScreen.swift in Sources */,
+				52797AA726AF0B9300DFCDE8 /* PopupView.swift in Sources */,
+				52797AAB26AF0BF600DFCDE8 /* FoodScreen.swift in Sources */,
 				5218F16426ADF30400B36874 /* ContentView.swift in Sources */,
 				5218F16226ADF30400B36874 /* DiaryTrainingApp.swift in Sources */,
+				52797AAD26AF0C1B00DFCDE8 /* TrainingScreen.swift in Sources */,
+				52797AAF26AF0C3B00DFCDE8 /* ProfileScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +409,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		52797AD026AF0E2300DFCDE8 /* Networking */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Networking;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5218F15626ADF30400B36874 /* Project object */;
 }
