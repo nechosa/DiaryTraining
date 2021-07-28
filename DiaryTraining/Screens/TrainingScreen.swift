@@ -7,6 +7,17 @@
 
 import SwiftUI
 
+private enum Constants {
+    static let title = "Тренировочный план"
+    static let buttonTitle = "Показать тренировочный план"
+}
+
+private enum Error {
+    static let title: String = "Ошибка"
+    static let message: String = "К сожалению данная опция недоступна!"
+    static let buttonOk = "Ошибка"
+}
+
 struct TrainingScreen: View {
 
     @State private var showPopUp: Bool = false
@@ -28,32 +39,18 @@ struct TrainingScreen: View {
                             showPopUp.toggle()
                         }
                     }, label: {
-                        Text("Show PopUp Window")
+                        Text(Constants.buttonTitle)
                     })
                     .padding()
                     .background(Color(#colorLiteral(red: 0.6196078431, green: 0.1098039216, blue: 0.2509803922, alpha: 1)))
                 }
                 .navigationBarTitleDisplayMode(.inline)
-                .navigationTitle("PopUpWindowSwiftUIExample")
+                .navigationTitle(Constants.title)
                 .foregroundColor(Color.white)
             }
 
-            PopupView(title: "Error", message: "Sorry, that email address is already used!", buttonText: "OK", show: $showPopUp)
+            PopupView(title: Error.title, message: Error.message, buttonText: Error.buttonOk, show: $showPopUp)
         }
-        //        NavigationView {
-        //            VStack {
-        //                NavigationLink(
-        //                    destination: PopupView(
-        //                        title: "Error",
-        //                        message: "Sorry, that email address is already used!",
-        //                        buttonText: "OK",
-        //                        show: $showPopUp
-        //                    )
-        //                ) {
-        //                    Text("Show Popup")
-        //                }
-        //            }
-        //        }
     }
 }
 

@@ -8,8 +8,15 @@
 import SwiftUI
 
 struct ProfileScreen: View {
+
+    @EnvironmentObject var router: Router
+
     var body: some View {
-        Text("Hello, User!")
+        Button(action: {
+            router.tabSelection = 1
+        }, label: {
+            Text("To Food screen")
+        })
     }
 }
 

@@ -8,18 +8,42 @@
 import SwiftUI
 import Networking
 
+private enum Contants {
+    static var previousMonthDate: String {
+        let date = Date().getLastOrCurrentMonth()
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd"
+        let result = formatter.string(from: date)
+        return result
+    }
+
+    static let lang = "ru"
+    static let apiKey = "a59e5f24831a4322b535578654582973"
+    static let startPage = 1
+    static let query  = "Food"
+    static let sortedBy  = "publishedAt"
+}
+
 final class FoodListViewModel: ObservableObject {
 
     @Published var foodNewsList: [Article] = .init()
 
+    private var fromDate: String {
+        Contants.previousMonthDate
+    }
+
+    private var language: String {
+        Contants.lang
+    }
+
     func fetch( action: @escaping ()->Void ) {
         ArticlesAPI.everythingGet(
-            q: "Food",
-            from: "2021-06-15",
-            sortBy: "publishedAt",
-            language: "ru",
-            apiKey: "a59e5f24831a4322b535578654582973",
-            page: 1,
+            q: Contants.query,
+            from: fromDate,
+            sortBy: Contants.sortedBy,
+            language: language,
+            apiKey: Contants.apiKey,
+            page: Contants.startPage,
             apiResponseQueue: DispatchQueue.global(qos: .utility)) { list, error in
 
             DispatchQueue.main.async { [weak self]  in
@@ -69,3 +93,11 @@ struct DashBoardScreen_Previews: PreviewProvider {
     }
 }
 
+
+extension Date {
+
+    func getLastOrCurrentMonth() -> Date {
+        return Calendar.current.date(byAdding: .month, value: -1, to: self) ?? self
+    }
+
+}
